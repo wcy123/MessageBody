@@ -34,5 +34,6 @@ $ curl -v -H "Content-Type: application/json" -XPUT -d '{"body":"hello there", "
 $ curl  http://localhost:8080/messages
 [{"id":12,"mid":1,"body":"hello there","timestamp":1471326755000}]
 
-
+$ curl  -XGET  http://localhost:8080/message/1
+{"id":12,"mid":1,"body":"hello there","timestamp":1471326755000}
 ```
